@@ -40,7 +40,7 @@ PRICE_RE      = re.compile(r"\$\s?([0-9,]+)")
 YEAR_RE       = re.compile(r"\b(19|20)\d{2}\b")
 MAKE_MODEL_RE = re.compile(r"\b([A-Z][a-z]+)\s+([A-Z][A-Za-z0-9]+)")
 TRANSMISSION_RE = re.compile(r"transmission:\s*(automatic|manual)", re.I)
-CONDITION_RE    = re.compile(r"condition:\s*([a-zA-Z]+(?:\s+[a-zA-Z]+)?)", re.I)
+CONDITION_RE = re.compile(r"condition:\s*([a-zA-Z]+(?:[ \t]+[a-zA-Z]+)?)", re.I)
 TYPE_RE         = re.compile(r"type:\s*([a-zA-Z]+)", re.I)
 
 
